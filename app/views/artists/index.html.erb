@@ -3,12 +3,17 @@
   <table border="1">
     <tr>
       <td>
-        <a href="artists/<%=artist.id%>"><%= artist.name %></a>
+        <%= artist.image_url %>
       </td>
     </tr>
     <tr>
       <td>
-        <%= artist.image_url %>
+        <%= artist.name %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="artists/<%=artist.id%>">Ver más</a>
       </td>
     </tr>
   </table>

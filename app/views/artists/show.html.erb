@@ -1,13 +1,15 @@
+<h1><%=@artist.name%></h1>
+<h2>Albums(<%=@albums.size%>)</h2>
 <% @albums.each do |album| %>
   <table border="1">
     <tr>
       <td>
-        <%= album.name %>
+        <%= album.image_url %>
       </td>
     </tr>
     <tr>
       <td>
-        <%= album.image_url %>
+        <%= album.name %>
       </td>
     </tr>
     <tr>
