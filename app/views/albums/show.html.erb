@@ -1,0 +1,21 @@
+<% @albums.each do |album| %>
+
+<h1><%= @album.artist_id %></h1>
+
+  <table>
+    <tr>
+      <td>
+        <%= @album.name %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= @album.image_url %>
+      </td>
+    </tr>
+      <td>
+        <%= @album.released_at %>
+      </td>
+    </tr>
+  </table>
+<%end%>
